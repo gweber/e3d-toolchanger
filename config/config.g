@@ -49,6 +49,7 @@ M574 C0 Z0  						; No C Z endstop
 M558 P8 C"zstop" H3 F360 I0 T20000 	; Set Z probe type to switch, the axes for which it is used and the dive height + speeds
 G31 P200 X0 Y0 Z0	 				; Set Z probe trigger value, offset and trigger height
 M557 X10:290 Y20:180 S140:80 		; Define mesh grid
+M376 H10							; tapper bed compansation
 
 ;Stall Detection
 M915 X Y S3 F0 H400 R4700				; X / Y Axes
